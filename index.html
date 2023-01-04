@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>azamon.com</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/loginSignup.css">
+</head>
+
+<body>
+    <header id="headerID">
+
+        <a href="http://azam-on.stackstaging.com">
+            <h1>Azamon.com</h1>
+        </a>
+        <span style="position: relative;top:0px;bottom:10px;color:black;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">A Complete Digital World</span>
+    </header>
+    <nav>
+        <div id="loginID">
+            <span><a href="">Mobiles</a></span>
+            <span><a href="">Computers</a></span>
+            <span><a href="">Laptops</a></span>
+            <span><a href="">Accessories</a></span>
+            <button onclick="document.getElementById('id01').style.display='block'" style="float: right; margin-right: 5px;">Login</button>
+            <button id="addedCart">
+                <img src="images/shopping_cart-black-36dp.svg" width="30px" alt="">
+            </button>
+        </div>
+    </nav>
+    <aside>
+        <label for="" style="color:white;background-color: darkorchid;border-radius: 5px;">Brand</label><br />
+        <div style="height:150px;opacity: 50px;">
+            <input type="checkbox" name="option1"><label for="">OnePlus</label><br/>
+            <input type="checkbox" name="option2"><label for="option2">Samsung</label><br>
+            <input type="checkbox" name="option3"><label for="option3">LG</label><br>
+            <input type="checkbox" name="option4"><label for="option4">Apple</label><br>
+        </div>
+    </aside>
+    <article>
+        <select name="Sort By" id="sorting">
+            <option value="Featured" selected>Featured</option>
+            <option value="New">New</option>
+            <option value="Low to High">Low to High</option>
+            <option value="High to Low">High to Low</option>
+        </select>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://oasis.opstatics.com/content/dam/oasis/page/store/phone/8_%20display_728x670.jpg.transform/scale-50/image.jpg" alt="OnePlus 8">
+                        <span>OnePlus 8</span><br />
+                        <span>₹ 41,999</span>
+                        <button id="buyNow">Buy Now</button>
+                        <button id="buyNow">Add to Cart
+                            <img id="cart" width="30px" src="images/add_shopping_cart-black-36dp.svg" alt="">
+                        </button>
+                    </td>
+                    <td>
+                        <img src="https://oasis.opstatics.com/content/dam/oasis/page/store/phone/7T%20Pro_%20display_728x670.jpg.transform/scale-50/image.jpg" alt="OnePlus 7T Pro">
+                        <span>OnePlus 7T Pro</span>
+                        </br />
+                        <span>₹ 43,999</span>
+                        <button id="buyNow">Buy Now</button>
+                        <button id="buyNow">Add to Cart
+                            <img id="cart" width="30px" src="images/add_shopping_cart-black-36dp.svg" alt="">
+                        </button>
+                    </td>
+                    <td>
+                        <img src="https://oasis.opstatics.com/content/dam/oasis/page/store/phone/7T_%20display_728x670.jpg.transform/scale-50/image.jpg" alt="OnePlus 7T">
+                        <span>OnePlus 7T</span><br />
+                        <span>₹ 34,999</span>
+                        <button id="buyNow"> Buy Now</button>
+                        <button id="buyNow">Add to Cart
+                            <img id="cart" width="30px" src="images/add_shopping_cart-black-36dp.svg" alt="">
+                        </button>
+                    </td>
+                </tr>
+                <td>
+                    <img src="https://oasis.opstatics.com/content/dam/oasis/page/store/phone/7%20Pro_%20display_728x670.jpg.transform/scale-50/image.jpg" alt="OnePlus 7 Pro">
+                    <span>OnePlus 7 Pro</span><br />
+                    <span>₹ 48,999</span>
+                    <button id="buyNow"> Buy Now</button>
+                    <button id="buyNow">Add to Cart
+                        <img id="cart" width="30px" src="images/add_shopping_cart-black-36dp.svg" alt="">
+                    </button>
+                </td>
+            </tbody>
+        </table>
+    </article>
+
+    <!-- Login DIV Article Starts-->
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="container">
+                <label for="uname"><b>E-Mail/Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label><br />
+                <button type="submit" id="loginButton">Login</button>
+                <span class="psw"><a href="#" id="pass">Forgot password?</a></span>
+                <br />
+                <span id="noAccount">Don't have an Account
+                    <button
+                        onclick="document.getElementById('id02').style.display='block',document.getElementById('id01').style.display='none'"
+                        style="color: black;">Create a New Account</button></span>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <footer id="footerID">
+            <a href=""><img src="images/instagram.svg" width="50px" alt=""></a>
+            <a href=""><img src="images/facebook.svg" width="50px" alt=""></a>
+            <a href=""><img src="images/twitter.svg" width="50px" alt=""></a>
+        </footer>
+    </div>
+    <!--Login Div Ended-->
+
+
+    <!--Sign Up Div-->
+
+    <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="GET">
+            <div class="container">
+                <label for="uname"><b>E-Mail/Username</b></label>
+                <input type="text" placeholder="Enter E-Mail / Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Re-Enter Password" name="psw" required>
+
+                <button id="signupID" type="submit">Sign Up</button>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <!--Sign Up Div Ends-->
+
+    <!--Script Element Starts-->
+    <script>
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        var modal2 = document.getElementById('id02');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
+                }
+            }
+            // alert("This website is under process\nThis is not a Final Look.\nPlease Support");
+    </script>
+    <!--Script Element Ends-->
+</body>
+
+</html>
